@@ -1,4 +1,8 @@
-""" This program will return all of the medically associated bones for
+"""
+    Author: Maya Murphy, 22'
+    Carleton College, Layla Oesper (Advisor)
+
+    This program will return all of the medically associated bones for
     a colloquial body part that a user inputs.
 
     Input: Program should be able to handle all input properly.

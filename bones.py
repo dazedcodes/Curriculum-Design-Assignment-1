@@ -46,7 +46,6 @@ def create_dictionary(filename):
     for line in list:
         currentline = line.split(",")
         count += 1
-        print currentline, count
         key = currentline[0]
         value = currentline[1].strip()
         dict  = insert_key_value_pair(dict, key, value, count)
@@ -60,8 +59,10 @@ def colloquial_to_medical(dictionary,colloquial_name):
     and the terms associated are a (List) of the associated medical terms.
 
     """
-    # TO DO
-    list = "You need to implement this function!"
+    list = []
+    for key in dictionary:
+        if colloquial_name in dictionary[key]:
+            list.append(key)
     return list
 
 def print_message(list):
@@ -79,12 +80,13 @@ def print_message(list):
 def main():
     import sys
 
-    dict = create_dictionary("dataset.txt")
+    Dict = create_dictionary("dataset.txt")
 
     colloquial_term = raw_input("What part of your body hurts?: ")
     print "Oh, I'm so sorry that your", colloquial_term, "hurts!"
 
-    medical_terms = colloquial_to_medical(dict,colloquial_term)
+    medical_terms = colloquial_to_medical(Dict,colloquial_term)
+    print medical_terms
 
     print ""
     print "Let me see..."

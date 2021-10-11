@@ -9,7 +9,29 @@
     # capital versus lower case
     # doesn't insert a term that's not in the dictionary
 
+
 ## THOUGHTS ABOUT ASSIGNMENTS
+    # adding items to a dictionary
+    # separation of functions
+    # searching for an item in the dictionary
+    # adding an item to a dictionary
+    # key, value pairs in dictionary
+
+def insert_key_value_pair(dictionary, key, value, length):
+    """
+    Takes in a dictionary, a key, value, and count and returns a the dictionary
+    with the key, value pairs added. Keys are (Strings) that refer to the
+    colloquial name and values are (Strings) that refer to the medical terms
+
+    """
+    index = length - 1
+    dictionary.setdefault(key, [])
+    if key in dictionary:
+        dictionary[key].append(value)
+    else:
+        dictionary[key] = {value}
+    return dictionary
+
 def create_dictionary(filename):
     """
     Takes in a file and returns a dictionary of key, value pairs. Keys are
@@ -17,18 +39,17 @@ def create_dictionary(filename):
     refer to the associated medical terms
 
     """
-    Dict = {}
+    dict = {}
     f = open(filename)
     list = f.readlines()
+    count = 0
     for line in list:
         currentline = line.split(",")
-        print currentline
+        count += 1
+        print currentline, count
         key = currentline[0]
-        value = currentline[1]
-
-
-    # TO DO
-    dict = "You need to implement this function!"
+        value = currentline[1].strip()
+        dict  = insert_key_value_pair(dict, key, value, count)
     return dict
 
 def colloquial_to_medical(dictionary,colloquial_name):

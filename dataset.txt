@@ -1,0 +1,121 @@
+nasal, nose
+lacrimal, eyes
+inferior nasal concha, nose
+maxiallary, face
+zygomatic, cheeks
+temporal, head
+palatine, mouth
+parietal, head
+malleus, ear
+incus, ear
+stapes, ear
+frontal, head
+ethmoid, nose
+sphenoid, nasal
+mandible, jaw
+occipital, head
+rib 1, shoulder
+rib 2, shoulder
+rib 3, torso
+rib 4, torso
+rib 5, torso
+rib 6, torso
+rib 7, torso
+rib 8, torso
+rib 9, waist
+rib 10, waist
+rib 11, waist
+rib 12, waist
+hyoid, neck
+sternum, chest
+cervical vertebrae 1, neck
+c2, neck
+c3, neck
+c4, neck
+c5, neck
+c6, neck
+c7, neck
+thoracic vertebrae 1, back
+t2, upper back
+t3, upper back
+t4, upper back
+t5, upper back
+t6, middle back
+t7, middle back
+t8, middle back
+t9, middle back
+t10, middle back
+t11, middle back
+t12, middle back
+lumbar vertebrae 1, lower back
+l2, lower back
+l3, lower back
+l4, lower back
+l5, lower back
+sacrum, butt
+coccyx, privates
+scapula, shoulder blades
+clavicle, neck
+humerus, arms
+radius, forearm
+ulna, forearm
+scaphoid, wrist
+lunate, wrist
+triquetrum, wrist
+pisiform, wrist
+hamate, wrist
+capitate, wrist
+trapezoid, wrist
+trapezium, wrist
+metacarpal 1, fingers
+proximal phalange 1, fingers
+distal phalange 1, fingers
+metacarpal 2, fingers
+proximal phalange 2, fingers
+middle phalange 2, fingers
+distal phalange 2, fingers
+metacarpal 3, fingers
+proximal phalange 3, fingers
+middle phalange 3, fingers
+distal phalange 3, fingers
+metacarpal 4, fingers
+proximal phalange 4, fingers
+middle phalange 4, fingers
+distal phalange 4, fingers
+metacarpal 5, fingers
+proximal phalange 5, fingers
+middle phalange 5, fingers
+distal phalange 5, fingers
+illium, hip
+ischium, hip
+pubis, hip
+femur, thighs
+patella, knee
+tibia, shinbone
+fibula, leg
+talus, ankle
+calcaneus, ankle
+navicular, foot
+medial cuneiform, foot
+middle cuneiform, foot
+lateral cuneiform, foot
+cuboid, foot
+metacarpal 1, toes
+proximal phalange 1, toes
+distal phalange 1, toes
+metacarpal 2, toes
+proximal phalange 2, toes
+middle phalange 2, toes
+distal phalange 2, toes
+metacarpal 3, toes
+proximal phalange 3, toes
+middle phalange 3, toes
+distal phalange 3, toes
+metacarpal 4, toes
+proximal phalange 4, toes
+middle phalange 4, toes
+distal phalange 4, toes
+metacarpal 5, toes
+proximal phalange 5, toes
+middle phalange 5, toes
+distal phalange 5, toes

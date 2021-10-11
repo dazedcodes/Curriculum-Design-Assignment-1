@@ -72,28 +72,27 @@ def print_message(list):
     The associated medical terms (List) and the message (String).
 
     """
-    message = 'Tell your doctor that you need a look at your '
-
-    #TO DO
-    return message
+    message = "Tell your doctor that you need a look at your: "
+    print(message)
+    print("")
+    for term in list:
+        print(term, "")
+    print("")
 
 def main():
     import sys
 
     Dict = create_dictionary("dataset.txt")
 
-    colloquial_term = raw_input("What part of your body hurts?: ")
-    print "Oh, I'm so sorry that your", colloquial_term, "hurts!"
+    colloquial_term = input("What part of your body hurts?: ")
+    print("Oh, I'm so sorry that your", colloquial_term, "hurts!")
 
     medical_terms = colloquial_to_medical(Dict,colloquial_term)
-    print medical_terms
 
-    print ""
-    print "Let me see..."
-    print ""
-    reccomendations = print_message(medical_terms)
-
-    print reccomendations
+    print("")
+    print("Let me see...")
+    print("")
+    print_message(medical_terms)
 
 
 if __name__ == '__main__':

@@ -44,12 +44,7 @@ def insert_key_value_pair(dictionary, key, value, length):
     colloquial name and values are (Strings) that refer to the medical terms
 
     """
-    index = length - 1
-    dictionary.setdefault(key, [])
-    if key in dictionary:
-        dictionary[key].append(value)
-    else:
-        dictionary[key] = {value}
+    ## TODO: You need to implement this function!
     return dictionary
 
 def create_dictionary(filename):
@@ -60,15 +55,8 @@ def create_dictionary(filename):
 
     """
     dict = {}
-    f = open(filename)
-    list = f.readlines()
-    count = 0
-    for line in list:
-        currentline = line.split(",")
-        count += 1
-        key = currentline[0]
-        value = currentline[1].strip()
-        dict  = insert_key_value_pair(dict, key, value, count)
+
+    ## TODO: You need to implement this function!
     return dict
 
 def colloquial_to_medical(dictionary,colloquial_name):
@@ -81,9 +69,7 @@ def colloquial_to_medical(dictionary,colloquial_name):
     """
     list = []
 
-    for key in dictionary:
-        if colloquial_name in dictionary[key]:
-            list.append(key)
+    ## TODO: You need to implement this function!
     return list
 
 def print_message(term, list):
@@ -94,26 +80,15 @@ def print_message(term, list):
 
     """
     if not list:
-        print("Hmm, I don't recognize that body part. Try again. ")
-        print(" ")
+        ## TODO: You need to implement this part: if term is not in list.
     else:
-        print("")
-        print("Oh, I'm so sorry that your", term, "hurts!")
-        print("")
-        message = "Tell your doctor that you need a look at your: "
-        print(message)
-        print("")
-        for term in list:
-            print(term, "")
-        print("")
-        print("Feel better soon!")
-        print("")
+        ## TODO: You need to implement this part: if term is in list.
 
 def main():
     import sys
-    Dict = create_dictionary("dataset.txt")
-    colloquial_term = input("What part of your body hurts?: ").lower()
-    medical_terms = colloquial_to_medical(Dict,colloquial_term)
-    print_message(colloquial_term, medical_terms)
+    # Dict = create_dictionary("dataset.txt")
+    # colloquial_term = input("What part of your body hurts?: ")
+    # medical_terms = colloquial_to_medical(Dict,colloquial_term)
+    # print_message(colloquial_term, medical_terms)
 if __name__ == '__main__':
     main()
